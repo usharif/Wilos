@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E49FBC2AB86E51D6E174E1B /* Pods_Wilos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CD6DF5DEC4CB550309BF03 /* Pods_Wilos.framework */; };
 		61BFE8941F2410C100D2E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BFE8931F2410C100D2E947 /* AppDelegate.swift */; };
 		61BFE8961F2410C100D2E947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BFE8951F2410C100D2E947 /* ViewController.swift */; };
 		61BFE8991F2410C100D2E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61BFE8971F2410C100D2E947 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00CD6DF5DEC4CB550309BF03 /* Pods_Wilos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wilos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08562B6DE3E5FA7628FE429C /* Pods-Wilos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wilos/Pods-Wilos.debug.xcconfig"; sourceTree = "<group>"; };
 		61BFE8901F2410C100D2E947 /* Wilos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wilos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61BFE8931F2410C100D2E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61BFE8951F2410C100D2E947 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		61BFE89A1F2410C100D2E947 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61BFE89D1F2410C100D2E947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61BFE89F1F2410C100D2E947 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B7F64804B19522B8873504 /* Pods-Wilos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wilos/Pods-Wilos.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E49FBC2AB86E51D6E174E1B /* Pods_Wilos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		328CD53585E6AD2878694A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08562B6DE3E5FA7628FE429C /* Pods-Wilos.debug.xcconfig */,
+				A0B7F64804B19522B8873504 /* Pods-Wilos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		61BFE8871F2410C100D2E947 = {
 			isa = PBXGroup;
 			children = (
 				61BFE8921F2410C100D2E947 /* Wilos */,
 				61BFE8911F2410C100D2E947 /* Products */,
+				328CD53585E6AD2878694A69 /* Pods */,
+				68591478460077CF370B8078 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Wilos;
 			sourceTree = "<group>";
 		};
+		68591478460077CF370B8078 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00CD6DF5DEC4CB550309BF03 /* Pods_Wilos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61BFE8A21F2410C100D2E947 /* Build configuration list for PBXNativeTarget "Wilos" */;
 			buildPhases = (
+				6F997660646F83F72F5AF016 /* [CP] Check Pods Manifest.lock */,
 				61BFE88C1F2410C100D2E947 /* Sources */,
 				61BFE88D1F2410C100D2E947 /* Frameworks */,
 				61BFE88E1F2410C100D2E947 /* Resources */,
+				81738E71A1276DC9EE7592A1 /* [CP] Embed Pods Frameworks */,
+				FC407EC18510FB24810BFAA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6F997660646F83F72F5AF016 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		81738E71A1276DC9EE7592A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wilos/Pods-Wilos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC407EC18510FB24810BFAA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Wilos/Pods-Wilos-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		61BFE88C1F2410C100D2E947 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		61BFE8A31F2410C100D2E947 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08562B6DE3E5FA7628FE429C /* Pods-Wilos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JXTYT79G8A;
@@ -272,6 +348,7 @@
 		};
 		61BFE8A41F2410C100D2E947 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0B7F64804B19522B8873504 /* Pods-Wilos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = JXTYT79G8A;
