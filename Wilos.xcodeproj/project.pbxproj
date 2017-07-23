@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E49FBC2AB86E51D6E174E1B /* Pods_Wilos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CD6DF5DEC4CB550309BF03 /* Pods_Wilos.framework */; };
+		614180901F246891008E0E55 /* Keys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6141808F1F246891008E0E55 /* Keys.plist */; };
 		61BFE8941F2410C100D2E947 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BFE8931F2410C100D2E947 /* AppDelegate.swift */; };
 		61BFE8961F2410C100D2E947 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61BFE8951F2410C100D2E947 /* ViewController.swift */; };
 		61BFE8991F2410C100D2E947 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61BFE8971F2410C100D2E947 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		00CD6DF5DEC4CB550309BF03 /* Pods_Wilos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wilos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08562B6DE3E5FA7628FE429C /* Pods-Wilos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wilos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wilos/Pods-Wilos.debug.xcconfig"; sourceTree = "<group>"; };
+		6141808F1F246891008E0E55 /* Keys.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Keys.plist; sourceTree = "<group>"; };
 		61BFE8901F2410C100D2E947 /* Wilos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Wilos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61BFE8931F2410C100D2E947 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61BFE8951F2410C100D2E947 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				61BFE89A1F2410C100D2E947 /* Assets.xcassets */,
 				61BFE89C1F2410C100D2E947 /* LaunchScreen.storyboard */,
 				61BFE89F1F2410C100D2E947 /* Info.plist */,
+				6141808F1F246891008E0E55 /* Keys.plist */,
 			);
 			path = Wilos;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614180901F246891008E0E55 /* Keys.plist in Resources */,
 				61BFE89E1F2410C100D2E947 /* LaunchScreen.storyboard in Resources */,
 				61BFE89B1F2410C100D2E947 /* Assets.xcassets in Resources */,
 				61BFE8991F2410C100D2E947 /* Main.storyboard in Resources */,
@@ -379,6 +383,7 @@
 				61BFE8A41F2410C100D2E947 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
